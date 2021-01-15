@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import <NSLogKit/NSLogKit.h>
 
 @interface ViewController ()
 
@@ -18,5 +19,9 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    VVLogSDK *test = [[VVLogSDK alloc] init];
+    [test sayHello];
+}
 
 @end

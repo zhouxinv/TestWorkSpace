@@ -16,6 +16,8 @@
 		5C56BF7D25B18CCE00452AC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C56BF7C25B18CCE00452AC8 /* main.m */; };
 		5C56BF8725B18CCE00452AC8 /* TestWorkSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C56BF8625B18CCE00452AC8 /* TestWorkSpaceTests.m */; };
 		5C56BF9225B18CCE00452AC8 /* TestWorkSpaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C56BF9125B18CCE00452AC8 /* TestWorkSpaceUITests.m */; };
+		5C56BFDA25B196A100452AC8 /* NSLogKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C56BFD925B196A100452AC8 /* NSLogKit.framework */; };
+		5C56BFDB25B196A100452AC8 /* NSLogKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C56BFD925B196A100452AC8 /* NSLogKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 			remoteInfo = TestWorkSpace;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C56BFDC25B196A100452AC8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C56BFDB25B196A100452AC8 /* NSLogKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C56BF6725B18CCD00452AC8 /* TestWorkSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWorkSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +70,7 @@
 		5C56BF8D25B18CCE00452AC8 /* TestWorkSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestWorkSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C56BF9125B18CCE00452AC8 /* TestWorkSpaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWorkSpaceUITests.m; sourceTree = "<group>"; };
 		5C56BF9325B18CCE00452AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C56BFD925B196A100452AC8 /* NSLogKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NSLogKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C56BFDA25B196A100452AC8 /* NSLogKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +106,7 @@
 				5C56BF8525B18CCE00452AC8 /* TestWorkSpaceTests */,
 				5C56BF9025B18CCE00452AC8 /* TestWorkSpaceUITests */,
 				5C56BF6825B18CCD00452AC8 /* Products */,
+				5C56BFD825B196A100452AC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +156,14 @@
 			path = TestWorkSpaceUITests;
 			sourceTree = "<group>";
 		};
+		5C56BFD825B196A100452AC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C56BFD925B196A100452AC8 /* NSLogKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +174,7 @@
 				5C56BF6325B18CCD00452AC8 /* Sources */,
 				5C56BF6425B18CCD00452AC8 /* Frameworks */,
 				5C56BF6525B18CCD00452AC8 /* Resources */,
+				5C56BFDC25B196A100452AC8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
