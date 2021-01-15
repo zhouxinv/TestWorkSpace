@@ -1,0 +1,3 @@
+[submodule "NSLogKit"]
+	path = NSLogKit
+	url = https://github.com/zhouxinv/NSLogKit.git
